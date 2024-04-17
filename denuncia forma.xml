@@ -1,0 +1,5 @@
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="DenunciaController">
+    <TextField fx:id="nombreDenunciante" promptText="Nombre del Denunciante"/>
+    <!-- se pueden agregar más campos aquí dependiendo lo que coloquemos -->
+    <Button text="Siguiente" onAction="#manejarSiguiente"/>
+</VBox>
