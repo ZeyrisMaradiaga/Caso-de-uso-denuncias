@@ -1,0 +1,14 @@
+import java.time.LocalDateTime;
+
+public class Denuncia {
+    private Persona denunciante;
+    private Persona denunciado;
+    private LocalDateTime fechaHora;
+    private String lugar;
+    private String delito;
+    private String estado = "Abierto";
+    private String detalleHechos;
+    // se podria agregar una lista para evidencias y testigos de ser necesario aquí
+
+    // Constructores, getters y setters
+}
