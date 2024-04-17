@@ -1,0 +1,13 @@
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+
+public class DenunciaController {
+    @FXML
+    private TextField nombreDenunciante;
+    // aquí definiriamos el resto de los campos
+
+    @FXML
+    private void manejarSiguiente() {
+        // Implementariamos el manejo del clic 
+    }
+}
