@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Denuncias</title>
+</head>
+<body>
+    <h1>Formulario de Denuncia</h1>
+    <form id="denunciaForm">
+        <div>
+            <label for="nombreDenunciante">Nombre del Denunciante:</label>
+            <input type="text" id="nombreDenunciante" name="nombreDenunciante" required>
+        </div>
+        <div>
+            <label for="apellidoDenunciante">Apellido del Denunciante:</label>
+            <input type="text" id="apellidoDenunciante" name="apellidoDenunciante" required>
+        </div>
+        <div>
+            <label for="nombreDenunciado">Nombre del Denunciado:</label>
+            <input type="text" id="nombreDenunciado" name="nombreDenunciado" required>
+        </div>
+        <div>
+            <label for="delito">Delito:</label>
+            <input type="text" id="delito" name="delito" required>
+        </div>
+        <div>
+            <label for="lugar">Lugar del Incidente:</label>
+            <input type="text" id="lugar" name="lugar" required>
+        </div>
+        <div>
+            <label for="detalleHechos">Detalle de los Hechos:</label>
+            <textarea id="detalleHechos" name="detalleHechos" required></textarea>
+        </div>
+        <button type="submit">Enviar Denuncia</button>
+    </form>
+
+    <script>
+        document.getElementById('denunciaForm').onsubmit = function(event) {
+            event.preventDefault();  // va a evitar que el formulario se envíe a través del navegador.
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+            console.log("Denuncia Submitted:", data);
+            // va a enviar estos datos a un servidor aquí
+        };
+    </script>
+</body>
+</html>
